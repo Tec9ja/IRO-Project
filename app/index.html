@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRO - Issues Reporting Outlet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>IRO</h1>
+        <p>Issues Reporting Outlet for AAUA Students and Akungba Community</p>
+    </header>
+
+    <section class="intro">
+        <h2>Report Community Issues Easily</h2>
+        <p>
+            IRO is a simple web-based platform that allows AAUA students and
+            Akungba indigenes to report issues affecting the community.
+        </p>
+    </section>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Submit an Issue</h2>
+
+            <form id="issueForm">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+                <label for="userType">User Type</label>
+                <select id="userType" required>
+                    <option value="">-- Select User Type --</option>
+                    <option value="Student">Student</option>
+                    <option value="Indigene">Indigene</option>
+                </select>
+
+                <label for="category">Issue Category</label>
+                <select id="category" required>
+                    <option value="">-- Select Issue Category --</option>
+                    <option value="Security">Security</option>
+                    <option value="Water Supply">Water Supply</option>
+                    <option value="Electricity">Electricity</option>
+                    <option value="Road Network">Road Network</option>
+                    <option value="Environmental Sanitation">Environmental Sanitation</option>
+                    <option value="School Facilities">School Facilities</option>
+                    <option value="Others">Others</option>
+                </select>
+
+                <label for="location">Location of Issue</label>
+                <input type="text" id="location" placeholder="Example: Permanent Site, Iwaro Road" required>
+
+                <label for="description">Issue Description</label>
+                <textarea id="description" placeholder="Describe the issue here..." required></textarea>
+
+                <label for="evidence">Upload Evidence</label>
+                <input type="file" id="evidence">
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <section class="reports-section">
+            <h2>Submitted Reports</h2>
+            <div id="reports">
+                <p class="empty-message">No report has been submitted yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSC426 Project | IRO System | Developed by Emmanuel Lawrence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
